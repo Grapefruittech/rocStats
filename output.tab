@@ -1,0 +1,137 @@
+Count
+893
+Activity	Count
+WM	356
+KA	198
+CN	122
+IC	57
+CV	56
+RC	46
+XC	28
+MB	19
+PT	5
+FA	4
+RF	2
+Activity	ItemType	name	Count
+WM	SB	Sleeping Bag	102
+CN	PF	PFD	70
+WM	TN	Tent	62
+KA	BT	Booty	55
+WM	BP	Backpack	50
+KA	HT	Kayak Helmet	46
+CV	EL	Headlamp	38
+KA	DS	Dry Suit	33
+CN	PD	Canoe Paddle	32
+WM	SP	Sleeping Pad	31
+WM	SN	Snowshoe	27
+IC	IH	Ice Tool	25
+KA	AB	Air Bag	25
+WM	EL	princeton tec tikka plus	21
+RC	HT	Helmet	17
+RC	SH	Climbing Harness	17
+IC	BT	Ice Climbing Boot	16
+WM	CR	Crampons	16
+IC	FF	Petzl Crampon	16
+KA	TB	Throw Bag	13
+MB	BK	Giant Revel 0	13
+WM	ST	Backpacking stove	12
+CV	HT	caving helmet	11
+WM	IA	Ice Axe	11
+XC	BT	xc boots	10
+XC	PL	poles	9
+KA	SK	Skirt	9
+XC	SK	xc skis	9
+KA	PK	Pin Kit	8
+CN	CN	Canoe	7
+WM	FB	Fuel Bottle	6
+WM	BV	Bivy Sack	6
+RC	DR	Rope	6
+CN	DB	Dry Bag	5
+PT	GP	Go pro Hero 3+	5
+WM	SS	Stuff Sack	5
+CN	BS	boat sponge	5
+FA	FA	Adventure Med Kit	4
+MB	HT	Garneau Bike Helmet	4
+CV	AS	Ascender	4
+WM	WP	Water Pump	4
+KA	GL	Pogie	3
+RC	RB	Rope Bag	3
+RC	RP	rope	3
+RF	PP	electronic raft pump	2
+KA	WS	Farmer John	2
+WM	BC	Bear Canister	2
+CN	AB	canoe airbag	2
+MB	BG	Topeak Bike Bag	2
+KA	ST	Splash Top	2
+KA	PF	Stohlquist Rescue Vest	2
+CV	CP	Cave Pack	2
+WM	FF	Crampons for Ice Climbing	1
+CN	PP	bilge pump	1
+CV	SH	Caving Harness	1
+invCode	name	returned	daysOut
+IC-BT-22	Ice Climbing Boot	1	0
+CV-AS-01	Ascender	1	0
+KA-BT-13	Booty	1	0
+WM-TN-25	Tent	1	0
+IC-IH-10	Ice Tool	1	0
+WM-SS-44	Stuff Sack	1	0
+XC-BT-87	xc boots	1	0
+WM-TN-41	Tent	1	0
+WM-SP-15	Sleeping Pad	1	0
+IC-IH-09	Ice Tool	1	0
+ItemType	name	AverageDaysOut
+WM-FF	Crampons for Ice Climbing	286.0000
+KA-SK	Skirt	114.8889
+KA-PF	Stohlquist Rescue Vest	112.5000
+RC-HT	Helmet	102.4706
+WM-BV	Bivy Sack	101.3333
+WM-WP	Water Pump	95.0000
+MB-BG	Topeak Bike Bag	94.0000
+RC-DR	Rope	88.5000
+KA-AB	Air Bag	80.6000
+WM-BC	Bear Canister	80.5000
+MB-HT	Garneau Bike Helmet	71.7500
+RC-SH	Climbing Harness	65.4706
+WM-SP	Sleeping Pad	62.4839
+IC-IH	Ice Tool	60.5600
+RC-RP	rope	60.0000
+WM-CR	Crampons	53.0625
+IC-BT	Ice Climbing Boot	52.5000
+MB-BK	Giant Revel 0	51.2308
+WM-IA	Ice Axe	46.6364
+WM-ST	Backpacking stove	46.5833
+CN-BS	boat sponge	45.4000
+RC-RB	Rope Bag	44.3333
+KA-HT	Kayak Helmet	44.2391
+CV-AS	Ascender	42.7500
+WM-SB	Sleeping Bag	39.3529
+WM-TN	Tent	38.8548
+WM-SN	Snowshoe	34.7037
+WM-EL	princeton tec tikka plus	32.9048
+CN-CN	Canoe	32.5714
+IC-FF	Petzl Crampon	31.2500
+WM-BP	Backpack	30.7200
+FA-FA	Adventure Med Kit	30.0000
+CN-PF	PFD	29.7714
+WM-SS	Stuff Sack	29.4000
+CV-EL	Headlamp	27.3684
+KA-GL	Pogie	25.6667
+KA-BT	Booty	25.3636
+CN-DB	Dry Bag	23.8000
+KA-TB	Throw Bag	20.3846
+CV-HT	caving helmet	18.5455
+CN-PD	Canoe Paddle	17.5000
+PT-GP	Go pro Hero 3+	15.6000
+XC-SK	xc skis	15.1111
+XC-PL	poles	15.0000
+WM-FB	Fuel Bottle	14.3333
+KA-PK	Pin Kit	14.1250
+CV-SH	Caving Harness	13.0000
+KA-DS	Dry Suit	11.5152
+XC-BT	xc boots	11.5000
+KA-ST	Splash Top	11.5000
+CN-AB	canoe airbag	8.0000
+CN-PP	bilge pump	8.0000
+KA-WS	Farmer John	5.5000
+CV-CP	Cave Pack	3.5000
+RF-PP	electronic raft pump	1.0000
