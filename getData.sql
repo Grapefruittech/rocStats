@@ -20,6 +20,7 @@ GROUP BY Activity
 ORDER BY COUNT(*) DESC;
 
 /* Number of rentals per item */
+
 SELECT SUBSTRING(g.inventory_code, 1, 2) AS Activity
 	   , SUBSTRING(g.inventory_code, 4, 2) AS ItemType
 	   , g.name
@@ -47,10 +48,6 @@ FROM gear g
 INNER JOIN rentals r
 ON g.inventory_code = r.inventory_code);
 
-SELECT *
-FROM lengthOfRental
-ORDER BY daysOut
-LIMIT 10;
 
 /* Average time out by itemtype */
 SELECT SUBSTRING(l.invCode, 1, 5) AS ItemType
@@ -60,3 +57,5 @@ FROM lengthOfRental l
 GROUP BY ItemType
 ORDER BY AverageDaysOut DESC;
 	   
+
+
