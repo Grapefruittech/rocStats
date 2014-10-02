@@ -1,56 +1,43 @@
-ItemType	name	AverageDaysOut
-WM-FF	Crampons for Ice Climbing	286.0000
-KA-SK	Skirt	114.8889
-KA-PF	Stohlquist Rescue Vest	112.5000
-RC-HT	Climbing Helmet	102.4706
-WM-BV	Bivy Sack	101.3333
-WM-WP	Water Pump	95.0000
-MB-BG	Topeak Bike Bag	94.0000
-RC-DR	Rope	88.5000
-KA-AB	Air Bag	80.6000
-WM-BC	Bear Canister	80.5000
-MB-HT	Garneau Bike Helmet	71.7500
-RC-SH	Rock Climbing Harness	65.4706
-WM-SP	Sleeping Pad	62.4839
-IC-IH	Ice Tool	60.5600
-RC-RP	rope	60.0000
-WM-CR	Crampons	53.0625
-IC-BT	Ice Climbing Boot	52.5000
-MB-BK	Giant Talon	51.2308
-WM-IA	Ice Axe	46.6364
-WM-ST	backpacking stove	46.5833
-CN-BS	Boat Sponge	45.4000
-RC-RB	Rope Bag	44.3333
-KA-HT	Kayak Helmet	44.2391
-CV-AS	Hand ascender	42.7500
-WM-SB	Sleeping Bag	39.3529
-WM-TN	Tent	38.8548
-WM-SN	Snowshoe	34.7037
-WM-EL	Petzl Tikka 2	32.9048
-CN-CN	Canoe	32.5714
-IC-FF	ice climbing crampons	31.2500
-WM-BP	Osprey Kode 38	30.7200
-FA-FA	Adventure Med Kit	30.0000
-CN-PF	PFD	29.7714
-WM-SS	Stuff Sack	29.4000
-CV-EL	Princeton Tec	27.3684
-KA-GL	Pogie	25.6667
-KA-BT	Blue/black booty	25.3636
-CN-DB	Dry Bag	23.8000
-KA-TB	Throw Bag	20.3846
-CV-HT	Caving Helmet	18.5455
-CN-PD	Canoe Paddle	17.5000
-PT-GP	Go Pro	15.6000
-XC-SK	xc ski	15.1111
-XC-PL	poles	15.0000
-WM-FB	Fuel Bottle	14.3333
-KA-PK	Pin Kit	14.1250
-CV-SH	Caving Harness	13.0000
-KA-DS	Dry Suit	11.5152
-KA-ST	Splash Top	11.5000
-XC-BT	xc boots	11.5000
-CN-AB	canoe airbag	8.0000
-CN-PP	bilge pump	8.0000
-KA-WS	Farmer John	5.5000
-CV-CP	Cave Pack	3.5000
-RF-PP	Raft Pump	1.0000
+Activity	ItemType	name	AverageDaysOut
+WM	BV	Bivy Sack	101.3333
+WM	WP	Water Pump	95.0000
+MB	BG	Topeak Bike Bag	94.0000
+RC	DR	Rope	88.5000
+WM	BC	Bear Canister	80.5000
+KA	AB	Air Bag	75.2222
+KA	SK	Skirt	65.0000
+RC	SH	Rock Climbing Harness	62.5556
+WM	SP	Sleeping Pad	62.4839
+IC	IH	Ice Tool	60.5600
+RC	RP	rope	60.0000
+MB	HT	Garneau Bike Helmet	54.7179
+WM	CR	Crampons	53.0625
+MB	BK	Giant Talon	51.2308
+WM	IA	Ice Axe	46.6364
+IC	FF	ice climbing crampons	46.2353
+CN	BS	Boat Sponge	45.4000
+RC	RB	Rope Bag	44.3333
+CV	AS	Hand ascender	42.7500
+KA	ST	Splash Top	41.5714
+WM	SB	Sleeping Bag	39.3529
+WM	TN	Tent	38.8548
+WM	SN	Snowshoe	34.7037
+CN	CN	Canoe	32.5714
+KA	PF	Stohlquist Rescue Vest	32.0694
+WM	BP	Osprey Kode 38	30.7200
+FA	FA	Adventure Med Kit	30.0000
+WM	SS	Stuff Sack	29.4000
+WM	EL	Petzl Tikka 2	29.3390
+KA	BT	Blue/black booty	29.0123
+KA	GL	Pogie	25.6667
+CN	DB	Dry Bag	23.8000
+KA	TB	Throw Bag	20.3846
+CN	PD	Canoe Paddle	17.5000
+PT	GP	Go Pro	15.6000
+XC	PL	poles	15.0000
+WM	FB	Fuel Bottle	14.3333
+KA	PK	Pin Kit	14.1250
+KA	DS	Dry Suit	11.5152
+KA	WS	Farmer John	5.5000
+CV	CP	Cave Pack	3.5000
+RF	PP	Raft Pump	3.3333

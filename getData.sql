@@ -1,6 +1,7 @@
 USE roc;
 
 /* total number of rows*/
+
 SELECT COUNT(*) AS Count
 FROM gear g
 INNER JOIN rentals r
@@ -11,6 +12,7 @@ ORDER BY r.rental_id;
 	TYPES OF GEAR
 ***********************/
 /* Number of rentals per activity */
+
 SELECT SUBSTRING(g.inventory_code, 1, 2) AS Activity
 	   , COUNT(*) AS Count
 FROM gear g
@@ -50,7 +52,8 @@ ON g.inventory_code = r.inventory_code);
 
 
 /* Average time out by itemtype */
-SELECT SUBSTRING(l.invCode, 1, 5) AS ItemType
+SELECT SUBSTRING(l.invCode, 1, 2) AS Activity
+	   , SUBSTRING(l.invCode, 4, 2) AS ItemType
 	   , l.name
 	   , AVG(l.daysOut) AS AverageDaysOut
 FROM lengthOfRental l
