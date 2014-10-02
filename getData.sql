@@ -33,6 +33,20 @@ ON g.inventory_code = r.inventory_code
 GROUP BY Activity, ItemType
 ORDER BY COUNT(*) DESC;
 
+SELECT SUBSTRING(g.inventory_code, 1, 2) AS Activity
+	   , SUBSTRING(g.inventory_code, 4, 2) AS ItemType
+	   , SUBSTRING(g.inventory_code, 7, 2) AS ItemNumber
+	   , g.name
+	   , COUNT(*) AS Count
+FROM rentals r
+INNER JOIN gear g
+ON g.inventory_code = r.inventory_code
+WHERE SUBSTRING(g.inventory_code, 4, 2) IN ('SB', 'TN', 'BP')
+GROUP BY g.inventory_code 
+ORDER BY g.inventory_code
+INTO OUTFILE '/tmp/itemSpecific.tab';
+
+
 /***********************
 	LENGTH OF RENTAL
 ***********************/
