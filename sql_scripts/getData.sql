@@ -31,7 +31,8 @@ FROM gear g
 INNER JOIN rentals r
 ON g.inventory_code = r.inventory_code
 GROUP BY Activity, ItemType
-ORDER BY COUNT(*) DESC;
+ORDER BY COUNT(*) DESC
+INTO OUTFILE '/tmp/rentalsPerItem.tab';
 
 SELECT SUBSTRING(g.inventory_code, 1, 2) AS Activity
 	   , SUBSTRING(g.inventory_code, 4, 2) AS ItemType
@@ -72,7 +73,8 @@ SELECT SUBSTRING(l.invCode, 1, 2) AS Activity
 	   , AVG(l.daysOut) AS AverageDaysOut
 FROM lengthOfRental l
 GROUP BY ItemType
-ORDER BY AverageDaysOut DESC;
+ORDER BY AverageDaysOut DESC
+INTO OUTFILE '/tmp/timeOutPerItem.tab';
 	   
 
 
