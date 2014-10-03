@@ -38,12 +38,12 @@ barchart <- function(df, x, y, fill, title, xlab, ylab, filename) {
     theme(plot.margin = unit(c(1, 1, .5, .7), "cm")) +
     scale_fill_brewer(palette="Paired")
     
-  ggsave(filename=paste("images/", filename, ".png", sep=""),width=40, height=60, units="cm", dpi=600)
+  ggsave(filename=paste("../images/", filename, ".png", sep=""),width=40, height=60, units="cm", dpi=600)
 }
 
 ##################
 ## rentals per item chart
-rentalsPerItem <- read.csv(file='tab_files/rentalsPerItem.tab', sep='\t', header=TRUE)
+rentalsPerItem <- read.csv(file='../tab_files/rentalsPerItem.tab', sep='\t', header=TRUE)
 
 rentalsPerItem$Item = paste(rentalsPerItem$Activity, rentalsPerItem$ItemType, sep="-") 
 rentalsPerItem$ItemOrdered <- reorder(rentalsPerItem$Item, rentalsPerItem$Count) 
@@ -52,7 +52,7 @@ barchart(rentalsPerItem[rentalsPerItem$Count > 10,], "ItemOrdered", "Count", "Ac
 
 ##################
 ## time out plot
-timeOutPerItem <- read.csv(file='tab_files/timeOutPerItem.tab', sep='\t', header=TRUE)
+timeOutPerItem <- read.csv(file='../tab_files/timeOutPerItem.tab', sep='\t', header=TRUE)
 
 timeOutPerItem$Item = paste(timeOutPerItem$Activity, timeOutPerItem$ItemType, sep="-") 
 timeOutPerItem$ItemOrdered <- reorder(timeOutPerItem$Item, timeOutPerItem$AverageDaysOut)
