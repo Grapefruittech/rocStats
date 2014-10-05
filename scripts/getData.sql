@@ -43,7 +43,7 @@ FROM rentals r
 INNER JOIN gear g
 ON g.inventory_code = r.inventory_code
 WHERE SUBSTRING(g.inventory_code, 4, 2) IN ('SB', 'TN', 'BP')
-GROUP BY g.inventory_code 
+GROUP BY g.inventory_code
 ORDER BY g.inventory_code
 INTO OUTFILE '/tmp/itemSpecific.tab';
 
@@ -75,7 +75,7 @@ FROM lengthOfRental l
 GROUP BY ItemType
 ORDER BY AverageDaysOut DESC
 INTO OUTFILE '/tmp/timeOutPerItem.tab';
-	   
+
 
 
 /***********************
@@ -86,13 +86,13 @@ INTO OUTFILE '/tmp/timeOutPerItem.tab';
 SELECT r.inventory_code
 	   , g.name
 	   , g.description
-	   , COUNT(*) AS Count 
-FROM rentals r 
-INNER JOIN gear g 
-ON g.inventory_code = r.inventory_code 
+	   , COUNT(*) AS Count
+FROM rentals r
+INNER JOIN gear g
+ON g.inventory_code = r.inventory_code
 WHERE SUBSTRING(r.inventory_code, 4, 2) = 'SB'
-GROUP BY r.inventory_code 
-ORDER BY Count DESC 
+GROUP BY r.inventory_code
+ORDER BY Count DESC
 LIMIT 10;
 
 
@@ -100,13 +100,13 @@ LIMIT 10;
 SELECT r.inventory_code
 	   , g.name
 	   , g.description
-	   , COUNT(*) AS Count 
-FROM rentals r 
-INNER JOIN gear g 
-ON g.inventory_code = r.inventory_code 
+	   , COUNT(*) AS Count
+FROM rentals r
+INNER JOIN gear g
+ON g.inventory_code = r.inventory_code
 WHERE SUBSTRING(r.inventory_code, 4, 2) = 'TN'
-GROUP BY r.inventory_code 
-ORDER BY Count DESC 
+GROUP BY r.inventory_code
+ORDER BY Count DESC
 LIMIT 10;
 
 
@@ -114,13 +114,11 @@ LIMIT 10;
 SELECT r.inventory_code
 	   , g.name
 	   , g.description
-	   , COUNT(*) AS Count 
-FROM rentals r 
-INNER JOIN gear g 
-ON g.inventory_code = r.inventory_code 
+	   , COUNT(*) AS Count
+FROM rentals r
+INNER JOIN gear g
+ON g.inventory_code = r.inventory_code
 WHERE SUBSTRING(r.inventory_code, 4, 2) = 'BP'
-GROUP BY r.inventory_code 
-ORDER BY Count DESC 
+GROUP BY r.inventory_code
+ORDER BY Count DESC
 LIMIT 10;
-
-SELECT * from gear where description like '%Blue Grey 22L%;'

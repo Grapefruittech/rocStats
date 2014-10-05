@@ -2,13 +2,16 @@ library(ggplot2)
 library(grid)
 library(RColorBrewer)
 
-
+# function to create vertical barchart
 barchart <- function(df, x, y, fill, title, xlab, ylab, filename) {
   ggplot(df, aes_string(x = x, y = y, fill = fill)) +
     # bar chart
     geom_bar(stat='identity') +
+    # numbers on chart
     geom_text(aes_string(label=y), position=position_dodge(width=0.9), size=10, hjust=1.5, vjust= .4) +
-    coord_flip() + 
+    # make it vertical
+    coord_flip() +
+    # black and white
     theme_bw() +
     # Set the entire chart region to a light gray color
     theme(panel.background=element_rect(fill="#F0F0F0")) +
@@ -18,10 +21,10 @@ barchart <- function(df, x, y, fill, title, xlab, ylab, filename) {
     theme(panel.grid.major=element_blank()) +
     theme(panel.grid.minor=element_blank()) +
     theme(axis.ticks=element_blank()) +
-    # Dispose of the legend
+    # Fix legend
     theme(legend.key.size = unit(2.5, "cm")) +
     theme(legend.text = element_text(size=20)) +
-    theme(legend.title = element_text(size=20)) + 
+    theme(legend.title = element_text(size=20)) +
     theme(legend.background=element_rect(fill="#F0F0F0")) +
     # Set title and axis labels, and format these and tick marks
     ggtitle(title) +
@@ -34,7 +37,8 @@ barchart <- function(df, x, y, fill, title, xlab, ylab, filename) {
     theme(axis.title.x=element_text(size=26,colour="#535353",face="bold",vjust=-.5)) +
     # Plot margins and finally lin  e annotations
     theme(plot.margin = unit(c(1, 1, .5, .7), "cm")) +
+    # color palette for fills
     scale_fill_brewer(palette="Paired")
-  
+
   ggsave(filename=paste("../images/", filename, ".png", sep=""),width=40, height=60, units="cm", dpi=600)
 }
