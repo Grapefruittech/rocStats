@@ -78,3 +78,49 @@ INTO OUTFILE '/tmp/timeOutPerItem.tab';
 	   
 
 
+/***********************
+	Specific Items
+***********************/
+
+/* Sleeping bags */
+SELECT r.inventory_code
+	   , g.name
+	   , g.description
+	   , COUNT(*) AS Count 
+FROM rentals r 
+INNER JOIN gear g 
+ON g.inventory_code = r.inventory_code 
+WHERE SUBSTRING(r.inventory_code, 4, 2) = 'SB'
+GROUP BY r.inventory_code 
+ORDER BY Count DESC 
+LIMIT 10;
+
+
+/* Tents */
+SELECT r.inventory_code
+	   , g.name
+	   , g.description
+	   , COUNT(*) AS Count 
+FROM rentals r 
+INNER JOIN gear g 
+ON g.inventory_code = r.inventory_code 
+WHERE SUBSTRING(r.inventory_code, 4, 2) = 'TN'
+GROUP BY r.inventory_code 
+ORDER BY Count DESC 
+LIMIT 10;
+
+
+/* Backpack */
+SELECT r.inventory_code
+	   , g.name
+	   , g.description
+	   , COUNT(*) AS Count 
+FROM rentals r 
+INNER JOIN gear g 
+ON g.inventory_code = r.inventory_code 
+WHERE SUBSTRING(r.inventory_code, 4, 2) = 'BP'
+GROUP BY r.inventory_code 
+ORDER BY Count DESC 
+LIMIT 10;
+
+SELECT * from gear where description like '%Blue Grey 22L%;'
